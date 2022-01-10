@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DocExample.css">
+    <title>Turtle Examples</title>
+</head>
+<body>
+    <div class="container">
+            <p id="title">Python Turtle examples</p>
+        <div class="box">
+            <!--triangle tutorial-->
+            <p id="box-title">1. Draw a triangle</p>
+            <pre id="box-info">
+                from turtle import *
+                pensize(4)
+                for i in range(3):
+                  left(120)
+                  forward(100)
+                done()
+            </pre>
+            <img src="../Python_Turtle/image/triangle.jpg" id="image" width="600px" height="500px">
+
+            <!--Polygon tutorial-->
+            <p id="box-title">2. Draw a polygon</p>
+            <pre id="box-info">
+                from turtle import *
+                pensize(4)
+                for i in range(5):
+                  left(75)
+                  forward(100)
+                done()
+            </pre>
+            <img src="../Python_Turtle/image/polygon.jpg" id="image" width="600px" height="500px">
+            
+            <!--Olympic tutorial-->
+            <p id="box-title">3. Draw a Olympic</p>
+            <pre id="box-info">
+                from turtle import *
+
+                pensize(10)
+                
+                color("blue")
+                penup()
+                goto(-110, -25)
+                pendown()
+                circle(45)
+                
+                color("black")
+                penup()
+                goto(0, -25)
+                pendown()
+                circle(45)
+                
+                color("red")
+                penup()
+                goto(110, -25)
+                pendown()
+                circle(45)
+                
+                color("yellow")
+                penup()
+                goto(-55, -75)
+                pendown()
+                circle(45)
+                
+                color("green")
+                penup()
+                goto(55, -75)
+                pendown()
+                circle(45)
+                done()
+            </pre>
+            <img src="../Python_Turtle/image/olympic.jpg" id="image" width="600px" height="500px">
+            
+            <!--heart tutorial-->
+            <p id="box-title">4. Draw a heart</p>
+            <pre id="box-info">
+                from turtle import *
+                color ('red')
+                begin_fill()
+                pensize(3)
+                left(50)
+                forward(133)
+                circle(50,200)
+                right(140)
+                circle(50,200)
+                forward(133)
+                end_fill()
+                done()
+            </pre>
+            <img src="../Python_Turtle/image/heart.jpg" id="image" width="600px" height="500px">
+            
+            <!--infinity tutorial-->
+            <p id="box-title">5. Draw a infinity</p>
+                <pre id="box-info">
+                from turtle import *
+                bgcolor('black')
+                pencolor('orange')
+                pensize(3)
+                speed(11)
+                right(45)
+                for i in range(150):
+                   circle(30)
+                   if 7 < i <  62:
+                      left(5)
+                   if(80< i < 133):
+                      right(5)
+                   if(i < 80):
+                     forward(10)
+                   else:
+                     forward(5)    
+                done()
+                </pre>
+            <img src="../Python_Turtle/image/infinity.jpg" id="image" width="600px" height="500px">
+            
+            <!--pattern tutorial-->
+            <p id="box-title">6. Draw a pattern</p>
+                <pre id="box-info">
+                    from turtle import *
+                    s=Screen()
+                    s.title("pattern")
+                    pensize(3)
+                    speed(0)
+                    while True:
+                        for i in range(4):
+                        forward(50)
+                        left(90)
+                    right(10)
+                    hideturtle()
+                    done()
+                </pre>
+            <img src="../python doc/image/pattern.jpg" id="image" width="600px" height="500px">
+            
+            <!--stickman tutorial-->
+            <p id="box-title">7. Draw a simple stickman</p>
+            <pre id="box-info">
+                from turtle import *
+                    speed(0)
+                    circle(50)
+                    
+                    right(90)
+                    forward(90)
+                    right(150)
+                    forward(75)
+                    backward(75)
+                    right(60)
+                    forward(75)
+                    backward(75)
+                    right(150)
+                    forward(50)
+                    left(30)
+                    forward(100)
+                    backward(100)
+                    left(290)
+                    forward(100)
+                    penup()
+                    
+                    goto(-30,65)
+                    pendown()
+                    circle(10)
+                    penup()
+                    
+                    goto(15,65)
+                    pendown()
+                    circle(10)
+                    penup()
+                    
+                    goto(0,10)
+                    pendown()
+                    left(180)
+                    forward(20)
+                    penup()
+                    
+                    goto(0,10)
+                    pendown()
+                    right(270)
+                    forward(20)
+                    
+                    hideturtle()
+                    done()
+                    
+                </pre>
+                <img src="../Python_Turtle/image/stickman.jpg" id="image" width="600px" height="500px">
+                
+                <!--Color tutorial-->
+                <p id="box-title">7. Test a  colour pattern</p>
+                    <pre id="box-info">
+                        from turtle import *
+                        colors = ['orange', 'red', 'pink', 
+                        'yellow', 'blue', 'green']
+                        bgcolor('black')
+                        speed(0)
+                        for x in range(360):
+                         pencolor(colors[x % 6])
+                         width(x / 5 + 1)
+                         forward(x)
+                         left(20)
+                    </pre>
+                <img src="../Python_Turtle/image/colortesting.jpg" id="image" width="600px" height="500px">
+                
+                <!--pattern1 tutorial-->
+                <p id="box-title">8. draw a pattern</p>
+                    <pre id="box-info">
+                    from turtle import *
+                    speed(0)
+                    bgcolor('black')
+                    for x in range(360):
+                        pensize(3)
+                        pencolor('cyan')
+                        circle(50)
+                        left(10)
+                        hideturtle()
+                    </pre>
+                <img src="../Python_Turtle/image/pattern1.jpg" id="image" width="600px" height="500px">
+            </div>
+            <br>
+            
+    </div>
+    
+</body>
+</html>
