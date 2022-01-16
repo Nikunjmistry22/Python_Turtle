@@ -759,6 +759,45 @@
                             main()
                     </pre>
                 <img src="../Python_Turtle/image/cartoon.jpg" id="image" width="600px" height="500px">
+
+                 
+                <!--chess tutorial-->
+                <p id="box-title">10. draw a chess board</p>
+                    <pre id="box-info">
+                        from turtle import *
+                        title('chess board')
+                        speed(0)
+                        def box(ln):
+                            for i in range(4):
+                                forward(ln)
+                                right(90)
+                        x=0
+                        y=0
+                        count=2
+                        while True:
+                            goto(x,y)
+                            pendown()
+                            x+=20
+                            begin_fill()
+                            if count % 2 == 0:
+                                fillcolor("black")
+                            else:
+                                fillcolor("white")
+                            count +=1
+                            box(20)
+                            end_fill()
+                            if x > 20*8:
+                                x=0
+                                y+=20
+                                penup()
+                                count +=2
+                        
+                            if y > 20*8:
+                                break
+                        
+                        done()
+                    </pre>
+                <img src="../Python_Turtle/image/chess.jpg" id="image" width="600px" height="500px">
             </div>
             <br>
             
